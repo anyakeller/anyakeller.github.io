@@ -4,10 +4,191 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Document</title>
+        <title>Anya Keller</title>
+        <link
+            rel="stylesheet"
+            href="assets/foundation-6.5.1-complete/css/foundation.css"
+        />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            /*inline style*/
+            .title-bar {
+                width: 100%;
+                z-index: 10;
+                transition: height 0.25s ease;
+                height: 4.5em;
+                background-color: #2c3840;
+            }
+            .title-bar .title-bar-right {
+                transition: padding-top 0.25s ease;
+                padding-top: 1.4em;
+            }
+            .title-bar.shrink {
+                height: 3.5em;
+            }
+            .title-bar.shrink .title-bar-right,
+            .title-bar.shrink .title-bar-left {
+                padding-top: 0em;
+            }
+        </style>
     </head>
     <body>
-        <header><h1>My name is Anya</h1></header>
-        <p>HIIII</p>
+        <div data-sticky-container>
+            <div class="title-bar" data-sticky data-options="marginTop:0;">
+                <div class="title-bar-left">
+                    <span class="title-bar-title"
+                        ><h2 style="display: inline">Anya Keller</h2>
+                        Portfolio</span
+                    >
+                </div>
+                <div class="title-bar-right">
+                    <ul class="dropdown menu align-right" data-dropdown-menu>
+                        <li><a>Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-y medium-grid-frame" style="height: 100%;">
+                <p id="lorem">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+                    vitae rerum esse sit non obcaecati officia perspiciatis
+                    blanditiis eum sunt repellendus odio, aperiam omnis nesciunt
+                    inventore itaque? Natus, cumque deleniti?Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Nihil aspernatur fuga
+                    numquam harum fugit suscipit officia itaque facilis, velit
+                    veniam deleniti molestias optio aut pariatur a doloribus
+                    odit corporis minus?Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Nisi, repellendus delectus? Excepturi
+                    explicabo quod saepe? Impedit laudantium molestiae nam,
+                    voluptates odio eaque unde ut totam ex aut fuga dolores
+                    illo. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Consequatur architecto magni eveniet, consequuntur
+                    porro corporis harum facere itaque repellat corrupti at
+                    impedit sint nihil, sunt soluta illum animi doloremque?
+                    Sint? Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Molestiae, veniam. Ipsam nesciunt eaque quisquam hic
+                    sapiente cum quos, placeat sequi soluta at quo minus
+                    repellendus? Vitae rem ab animi exercitationem. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Exercitationem
+                    quod corrupti quidem in nesciunt, non repudiandae placeat
+                    dolorem blanditiis minus rerum facere ut officiis laudantium
+                    nisi, necessitatibus, voluptate tempore ducimus. Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. Et vitae rerum
+                    esse sit non obcaecati officia perspiciatis blanditiis eum
+                    sunt repellendus odio, aperiam omnis nesciunt inventore
+                    itaque? Natus, cumque deleniti?Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Nihil aspernatur fuga numquam
+                    harum fugit suscipit officia itaque facilis, velit veniam
+                    deleniti molestias optio aut pariatur a doloribus odit
+                    corporis minus?Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Nisi, repellendus delectus? Excepturi
+                    explicabo quod saepe? Impedit laudantium molestiae nam,
+                    voluptates odio eaque unde ut totam ex aut fuga dolores
+                    illo. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Consequatur architecto magni eveniet, consequuntur
+                    porro corporis harum facere itaque repellat corrupti at
+                    impedit sint nihil, sunt soluta illum animi doloremque?
+                    Sint? Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Molestiae, veniam. Ipsam nesciunt eaque quisquam hic
+                    sapiente cum quos, placeat sequi soluta at quo minus
+                    repellendus? Vitae rem ab animi exercitationem. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Exercitationem
+                    quod corrupti quidem in nesciunt, non repudiandae placeat
+                    dolorem blanditiis minus rerum facere ut officiis laudantium
+                    nisi, necessitatibus, voluptate tempore ducimus. Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. Et vitae rerum
+                    esse sit non obcaecati officia perspiciatis blanditiis eum
+                    sunt repellendus odio, aperiam omnis nesciunt inventore
+                    itaque? Natus, cumque deleniti?Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Nihil aspernatur fuga numquam
+                    harum fugit suscipit officia itaque facilis, velit veniam
+                    deleniti molestias optio aut pariatur a doloribus odit
+                    corporis minus?Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Nisi, repellendus delectus? Excepturi
+                    explicabo quod saepe? Impedit laudantium molestiae nam,
+                    voluptates odio eaque unde ut totam ex aut fuga dolores
+                    illo. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Consequatur architecto magni eveniet, consequuntur
+                    porro corporis harum facere itaque repellat corrupti at
+                    impedit sint nihil, sunt soluta illum animi doloremque?
+                    Sint? Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Molestiae, veniam. Ipsam nesciunt eaque quisquam hic
+                    sapiente cum quos, placeat sequi soluta at quo minus
+                    repellendus? Vitae rem ab animi exercitationem. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Exercitationem
+                    quod corrupti quidem in nesciunt, non repudiandae placeat
+                    dolorem blanditiis minus rerum facere ut officiis laudantium
+                    nisi, necessitatibus, voluptate tempore ducimus. Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. Et vitae rerum
+                    esse sit non obcaecati officia perspiciatis blanditiis eum
+                    sunt repellendus odio, aperiam omnis nesciunt inventore
+                    itaque? Natus, cumque deleniti?Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Nihil aspernatur fuga numquam
+                    harum fugit suscipit officia itaque facilis, velit veniam
+                    deleniti molestias optio aut pariatur a doloribus odit
+                    corporis minus?Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Nisi, repellendus delectus? Excepturi
+                    explicabo quod saepe? Impedit laudantium molestiae nam,
+                    voluptates odio eaque unde ut totam ex aut fuga dolores
+                    illo. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Consequatur architecto magni eveniet, consequuntur
+                    porro corporis harum facere itaque repellat corrupti at
+                    impedit sint nihil, sunt soluta illum animi doloremque?
+                    Sint? Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Molestiae, veniam. Ipsam nesciunt eaque quisquam hic
+                    sapiente cum quos, placeat sequi soluta at quo minus
+                    repellendus? Vitae rem ab animi exercitationem. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Exercitationem
+                    quod corrupti quidem in nesciunt, non repudiandae placeat
+                    dolorem blanditiis minus rerum facere ut officiis laudantium
+                    nisi, necessitatibus, voluptate tempore ducimus. Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. Et vitae rerum
+                    esse sit non obcaecati officia perspiciatis blanditiis eum
+                    sunt repellendus odio, aperiam omnis nesciunt inventore
+                    itaque? Natus, cumque deleniti?Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Nihil aspernatur fuga numquam
+                    harum fugit suscipit officia itaque facilis, velit veniam
+                    deleniti molestias optio aut pariatur a doloribus odit
+                    corporis minus?Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Nisi, repellendus delectus? Excepturi
+                    explicabo quod saepe? Impedit laudantium molestiae nam,
+                    voluptates odio eaque unde ut totam ex aut fuga dolores
+                    illo. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Consequatur architecto magni eveniet, consequuntur
+                    porro corporis harum facere itaque repellat corrupti at
+                    impedit sint nihil, sunt soluta illum animi doloremque?
+                    Sint? Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Molestiae, veniam. Ipsam nesciunt eaque quisquam hic
+                    sapiente cum quos, placeat sequi soluta at quo minus
+                    repellendus? Vitae rem ab animi exercitationem. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Exercitationem
+                    quod corrupti quidem in nesciunt, non repudiandae placeat
+                    dolorem blanditiis minus rerum facere ut officiis laudantium
+                    nisi, necessitatibus, voluptate tempore ducimus.
+                </p>
+            </div>
+        </div>
+
+        <div id="scripts">
+            <script src="assets/foundation-6.5.1-complete/js/vendor/jquery.js"></script>
+            <script src="assets/foundation-6.5.1-complete/js/vendor/what-input.js"></script>
+            <script src="assets/foundation-6.5.1-complete/js/vendor/foundation.js"></script>
+            <script src="assets/js/app.js"></script>
+            <script>
+                //inline script
+                $(".title-bar")
+                    .on("sticky.zf.stuckto:top", function() {
+                        $(this).addClass("shrink");
+                    })
+                    .on("sticky.zf.unstuckfrom:top", function() {
+                        $(this).removeClass("shrink");
+                    });
+            </script>
+        </div>
     </body>
 </html>
