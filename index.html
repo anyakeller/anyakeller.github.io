@@ -12,166 +12,84 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <style>
             /*inline style*/
-            .title-bar {
-                width: 100%;
-                z-index: 10;
-                transition: height 0.25s ease;
-                height: 4.5em;
-                background-color: #2c3840;
-            }
-            .title-bar .title-bar-right {
-                transition: padding-top 0.25s ease;
-                padding-top: 1.4em;
-            }
-            .title-bar.shrink {
-                height: 3.5em;
-            }
-            .title-bar.shrink .title-bar-right,
-            .title-bar.shrink .title-bar-left {
-                padding-top: 0em;
-            }
         </style>
     </head>
     <body>
         <div data-sticky-container>
-            <div class="title-bar" data-sticky data-options="marginTop:0;">
+            <div
+                class="title-bar"
+                data-responsive-toggle="collapseMenu"
+                data-hide-for="medium"
+            >
+                <span class="title-bar-title"
+                    ><h2 style="display: inline">Anya Keller</h2>
+                    Portfolio</span
+                >
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li>
+                        <a href="#">Menu</a>
+                        <ul class="menu vertical">
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div
+                id="collapseMenu"
+                class="title-bar"
+                data-sticky
+                data-options="marginTop:0;"
+            >
                 <div class="title-bar-left">
-                    <span class="title-bar-title"
-                        ><h2 style="display: inline">Anya Keller</h2>
-                        Portfolio</span
-                    >
+                    <span class="title-bar-title"><h3>Anya Keller</h3> </span>
                 </div>
-                <div class="title-bar-right">
+                <div class="title-bar-right menu" id="title-right">
                     <ul class="dropdown menu align-right" data-dropdown-menu>
-                        <li><a>Item 1</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">Item 2</a></li>
                         <li><a href="#">Item 3</a></li>
-                        <li><a href="#">Item 4</a></li>
+                        <li>
+                            <a href="notSoBriefIntro.html"
+                                >Not-so-brief About</a
+                            >
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="grid-container">
-            <div class="grid-y medium-grid-frame" style="height: 100%;">
-                <p id="lorem">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
-                    vitae rerum esse sit non obcaecati officia perspiciatis
-                    blanditiis eum sunt repellendus odio, aperiam omnis nesciunt
-                    inventore itaque? Natus, cumque deleniti?Lorem, ipsum dolor
-                    sit amet consectetur adipisicing elit. Nihil aspernatur fuga
-                    numquam harum fugit suscipit officia itaque facilis, velit
-                    veniam deleniti molestias optio aut pariatur a doloribus
-                    odit corporis minus?Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Nisi, repellendus delectus? Excepturi
-                    explicabo quod saepe? Impedit laudantium molestiae nam,
-                    voluptates odio eaque unde ut totam ex aut fuga dolores
-                    illo. Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Consequatur architecto magni eveniet, consequuntur
-                    porro corporis harum facere itaque repellat corrupti at
-                    impedit sint nihil, sunt soluta illum animi doloremque?
-                    Sint? Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Molestiae, veniam. Ipsam nesciunt eaque quisquam hic
-                    sapiente cum quos, placeat sequi soluta at quo minus
-                    repellendus? Vitae rem ab animi exercitationem. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Exercitationem
-                    quod corrupti quidem in nesciunt, non repudiandae placeat
-                    dolorem blanditiis minus rerum facere ut officiis laudantium
-                    nisi, necessitatibus, voluptate tempore ducimus. Lorem ipsum
-                    dolor, sit amet consectetur adipisicing elit. Et vitae rerum
-                    esse sit non obcaecati officia perspiciatis blanditiis eum
-                    sunt repellendus odio, aperiam omnis nesciunt inventore
-                    itaque? Natus, cumque deleniti?Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Nihil aspernatur fuga numquam
-                    harum fugit suscipit officia itaque facilis, velit veniam
-                    deleniti molestias optio aut pariatur a doloribus odit
-                    corporis minus?Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Nisi, repellendus delectus? Excepturi
-                    explicabo quod saepe? Impedit laudantium molestiae nam,
-                    voluptates odio eaque unde ut totam ex aut fuga dolores
-                    illo. Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Consequatur architecto magni eveniet, consequuntur
-                    porro corporis harum facere itaque repellat corrupti at
-                    impedit sint nihil, sunt soluta illum animi doloremque?
-                    Sint? Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Molestiae, veniam. Ipsam nesciunt eaque quisquam hic
-                    sapiente cum quos, placeat sequi soluta at quo minus
-                    repellendus? Vitae rem ab animi exercitationem. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Exercitationem
-                    quod corrupti quidem in nesciunt, non repudiandae placeat
-                    dolorem blanditiis minus rerum facere ut officiis laudantium
-                    nisi, necessitatibus, voluptate tempore ducimus. Lorem ipsum
-                    dolor, sit amet consectetur adipisicing elit. Et vitae rerum
-                    esse sit non obcaecati officia perspiciatis blanditiis eum
-                    sunt repellendus odio, aperiam omnis nesciunt inventore
-                    itaque? Natus, cumque deleniti?Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Nihil aspernatur fuga numquam
-                    harum fugit suscipit officia itaque facilis, velit veniam
-                    deleniti molestias optio aut pariatur a doloribus odit
-                    corporis minus?Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Nisi, repellendus delectus? Excepturi
-                    explicabo quod saepe? Impedit laudantium molestiae nam,
-                    voluptates odio eaque unde ut totam ex aut fuga dolores
-                    illo. Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Consequatur architecto magni eveniet, consequuntur
-                    porro corporis harum facere itaque repellat corrupti at
-                    impedit sint nihil, sunt soluta illum animi doloremque?
-                    Sint? Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Molestiae, veniam. Ipsam nesciunt eaque quisquam hic
-                    sapiente cum quos, placeat sequi soluta at quo minus
-                    repellendus? Vitae rem ab animi exercitationem. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Exercitationem
-                    quod corrupti quidem in nesciunt, non repudiandae placeat
-                    dolorem blanditiis minus rerum facere ut officiis laudantium
-                    nisi, necessitatibus, voluptate tempore ducimus. Lorem ipsum
-                    dolor, sit amet consectetur adipisicing elit. Et vitae rerum
-                    esse sit non obcaecati officia perspiciatis blanditiis eum
-                    sunt repellendus odio, aperiam omnis nesciunt inventore
-                    itaque? Natus, cumque deleniti?Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Nihil aspernatur fuga numquam
-                    harum fugit suscipit officia itaque facilis, velit veniam
-                    deleniti molestias optio aut pariatur a doloribus odit
-                    corporis minus?Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Nisi, repellendus delectus? Excepturi
-                    explicabo quod saepe? Impedit laudantium molestiae nam,
-                    voluptates odio eaque unde ut totam ex aut fuga dolores
-                    illo. Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Consequatur architecto magni eveniet, consequuntur
-                    porro corporis harum facere itaque repellat corrupti at
-                    impedit sint nihil, sunt soluta illum animi doloremque?
-                    Sint? Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Molestiae, veniam. Ipsam nesciunt eaque quisquam hic
-                    sapiente cum quos, placeat sequi soluta at quo minus
-                    repellendus? Vitae rem ab animi exercitationem. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Exercitationem
-                    quod corrupti quidem in nesciunt, non repudiandae placeat
-                    dolorem blanditiis minus rerum facere ut officiis laudantium
-                    nisi, necessitatibus, voluptate tempore ducimus. Lorem ipsum
-                    dolor, sit amet consectetur adipisicing elit. Et vitae rerum
-                    esse sit non obcaecati officia perspiciatis blanditiis eum
-                    sunt repellendus odio, aperiam omnis nesciunt inventore
-                    itaque? Natus, cumque deleniti?Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Nihil aspernatur fuga numquam
-                    harum fugit suscipit officia itaque facilis, velit veniam
-                    deleniti molestias optio aut pariatur a doloribus odit
-                    corporis minus?Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Nisi, repellendus delectus? Excepturi
-                    explicabo quod saepe? Impedit laudantium molestiae nam,
-                    voluptates odio eaque unde ut totam ex aut fuga dolores
-                    illo. Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Consequatur architecto magni eveniet, consequuntur
-                    porro corporis harum facere itaque repellat corrupti at
-                    impedit sint nihil, sunt soluta illum animi doloremque?
-                    Sint? Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Molestiae, veniam. Ipsam nesciunt eaque quisquam hic
-                    sapiente cum quos, placeat sequi soluta at quo minus
-                    repellendus? Vitae rem ab animi exercitationem. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Exercitationem
-                    quod corrupti quidem in nesciunt, non repudiandae placeat
-                    dolorem blanditiis minus rerum facere ut officiis laudantium
-                    nisi, necessitatibus, voluptate tempore ducimus.
-                </p>
+            <div class="cell medium-auto medium-cell-block-container">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell medium-8 medium-cell-block-y">
+                        <h2>A Brief Intro</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Integer lacus odio, accumsan id ullamcorper
+                            eget, varius nec erat. Nulla facilisi. Donec dui
+                            felis, euismod nec finibus vitae, dapibus quis arcu.
+                            Maecenas tempor et ipsum quis venenatis. Ut posuere
+                            sed augue sit amet efficitur. Sed imperdiet, justo
+                            id tempus rhoncus, est est viverra turpis, non
+                            vulputate magna lectus et nisl. Pellentesque
+                            ultrices porttitor vehicula. Ut aliquet efficitur
+                            ligula, a consectetur felis. Proin tristique ut
+                            augue nec luctus. Curabitur a sapien pretium, auctor
+                            elit a, efficitur erat. Donec tincidunt dui vel
+                            velit bibendum euismod. Cras vitae nibh dui. Aliquam
+                            erat volutpat. Etiam sit amet arcu a erat efficitur
+                            facilisis. Ut viverra dapibus turpis, et ornare
+                            justo. Integer in dui cursus, dignissim tortor a,
+                            hendrerit risus.
+                        </p>
+                    </div>
+                </div>
             </div>
+            <!-- <div class="cell shrink footer">
+                <h3>Here's my footer</h3>
+            </div> -->
         </div>
 
         <div id="scripts">
