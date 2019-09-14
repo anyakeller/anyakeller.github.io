@@ -7,32 +7,15 @@
         <title>Anya Keller</title>
         <link rel="stylesheet" href="foundation.css" />
         <link rel="stylesheet" href="main.css" />
+        <script src="jquery.js"></script>
+        <script src="what-input.js"></script>
+        <script src="foundation.js"></script>
         <style>
             /*inline style*/
         </style>
     </head>
     <body>
         <div data-sticky-container>
-            <div
-                class="title-bar"
-                data-responsive-toggle="collapseMenu"
-                data-hide-for="medium"
-            >
-                <span class="title-bar-title"
-                    ><h2 style="display: inline">Anya Keller</h2>
-                    Portfolio</span
-                >
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li>
-                        <a href="#">Menu</a>
-                        <ul class="menu vertical">
-                            <li><a href="#">One</a></li>
-                            <li><a href="#">Two</a></li>
-                            <li><a href="#">Three</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
             <div
                 id="collapseMenu"
                 class="title-bar"
@@ -54,6 +37,26 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div
+                class="title-bar"
+                data-responsive-toggle="collapseMenu"
+                data-hide-for="medium"
+            >
+                <span class="title-bar-title"
+                    ><h2 style="display: inline">Anya Keller</h2>
+                    Portfolio</span
+                >
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li>
+                        <a href="#">Menu</a>
+                        <ul class="menu vertical">
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -90,19 +93,9 @@
         </div>
 
         <div id="scripts">
-            <script src="jquery.js"></script>
-            <script src="what-input.js"></script>
-            <script src="foundation.js"></script>
             <script src="app.js"></script>
             <script>
                 //inline script
-                $(".title-bar")
-                    .on("sticky.zf.stuckto:top", function() {
-                        $(this).addClass("shrink");
-                    })
-                    .on("sticky.zf.unstuckfrom:top", function() {
-                        $(this).removeClass("shrink");
-                    });
             </script>
         </div>
     </body>
