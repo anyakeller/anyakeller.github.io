@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Anya Keller</title>
+        <link rel="stylesheet" href="foundation.css" />
+        <link rel="stylesheet" href="main.css" />
+        <script src="jquery.js"></script>
+        <script src="what-input.js"></script>
+        <script src="foundation.js"></script>
+        <style>
+            /*inline style*/
+        </style>
+    </head>
+    <body>
+        <div data-sticky-container>
+            <div
+                id="collapseMenu"
+                class="title-bar"
+                data-sticky
+                data-options="marginTop:0;"
+            >
+                <div class="title-bar-left">
+                    <span class="title-bar-title"><h3>Anya Keller</h3> </span>
+                </div>
+                <div class="title-bar-right menu" id="title-right">
+                    <ul class="dropdown menu align-right" data-dropdown-menu>
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="notSoBriefIntro.html"
+                                >Not-so-brief About</a
+                            >
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="title-bar"
+                data-responsive-toggle="collapseMenu"
+                data-hide-for="medium"
+            >
+                <span class="title-bar-title"
+                    ><h2 style="display: inline">Anya Keller</h2>
+                    Portfolio</span
+                >
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li>
+                        <a href="#">Menu</a>
+                        <ul class="menu vertical">
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="notSoBriefIntro.html"
+                                    >Not-so-brief About</a
+                                >
+                            </li>
+
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="cell medium-auto medium-cell-block-container">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell medium-12 medium-cell-block-y">
+                        <h2>Projects</h2>
+                        <div
+                            class="grid-x grid-margin-x small-up-2 medium-up-3"
+                        >
+                            <div class="cell">
+                                <div class="card">
+                                    <div class="card-divider">
+                                        <h4>
+                                            <a
+                                                href="https://github.com/Bayless/The-Chosen-Tarsiers"
+                                                >Magic Music Matcher</a
+                                            >
+                                        </h4>
+                                    </div>
+                                    <img
+                                        src="magicMusicMatcherScreenshot.png"
+                                    />
+                                    <div class="card-section">
+                                        <p>
+                                            Web application utilizing python
+                                            flask for song generation. Features
+                                            include an interactive selection map
+                                            that generates songs from a random
+                                            other country with similar
+                                            charachteristics, a song search bar
+                                            for doing the same with a specific
+                                            song, a login system with saving
+                                            songs to your profile, and an
+                                            embedded spotify player.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="card">
+                                    <div class="card-divider">
+                                        <h4>
+                                            <a
+                                                href="https://github.com/st234pa/TilePuzzle2"
+                                                >Tile Puzzle</a
+                                            >
+                                        </h4>
+                                    </div>
+                                    <img src="tilePuzzleScreenshot.png" />
+                                    <div class="card-section">
+                                        <p>
+                                            A 3 by 3 sliding tile puzzle game
+                                            built using Java. Clickable tiles
+                                            allow sliding to complete the
+                                            picture. Two sorting algorithms are
+                                            available to solve the puzzle move
+                                            by move.
+                                        </p>
+                                        <p>
+                                            Compile files using javac and run
+                                            "$java PuzzleWindow" to play and
+                                            "$java Puzzle" to see the algorithm
+                                            in action
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="card">
+                                    <div class="card-divider">
+                                        <h4>
+                                            <a
+                                                href="https://github.com/anyakeller/BST_FP"
+                                                >Auto-Balancing Binary Search
+                                                Tree</a
+                                            >
+                                        </h4>
+                                    </div>
+                                    <img src="BSTscreenshot.png" />
+                                    <div class="card-section">
+                                        <p>
+                                            A vizualizer for binary search trees
+                                            written in Java that will
+                                            automatically sort a random array of
+                                            numbers and produce a balanced tree.
+                                        </p>
+                                        <p>
+                                            Run visualizer with "$java
+                                            VisualTree" Run sorting algo with
+                                            "$java BST"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="cell shrink footer">
+                <h3>Here's my footer</h3>
+            </div> -->
+        </div>
+
+        <div id="scripts">
+            <script src="app.js"></script>
+            <script>
+                //inline script
+            </script>
+        </div>
+    </body>
+</html>
