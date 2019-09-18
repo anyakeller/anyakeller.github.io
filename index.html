@@ -10,38 +10,14 @@
         <script src="jquery.js"></script>
         <script src="what-input.js"></script>
         <script src="foundation.js"></script>
+        <script src="https://kit.fontawesome.com/4d3760c928.js"></script>
+
         <style>
             /*inline style*/
         </style>
     </head>
     <body>
         <div data-sticky-container>
-            <div
-                id="collapseMenu"
-                class="title-bar"
-                data-sticky
-                data-options="marginTop:0;"
-            >
-                <div class="title-bar-left">
-                    <span class="title-bar-title"><h3>Anya Keller</h3> </span>
-                </div>
-                <div class="title-bar-right menu" id="title-right">
-                    <ul class="dropdown menu align-right" data-dropdown-menu>
-                        <li><a href="index.html">Home</a></li>
-                        <li>
-                            <a href="projects.html">Projects</a>
-                        </li>
-                        <li>
-                            <a href="notSoBriefIntro.html"
-                                >Not-so-brief About</a
-                            >
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div
                 class="title-bar"
                 data-responsive-toggle="collapseMenu"
@@ -71,6 +47,30 @@
                         </ul>
                     </li>
                 </ul>
+            </div>
+            <div
+                id="collapseMenu"
+                class="title-bar"
+                data-sticky
+                data-options="marginTop:0;"
+            >
+                <div class="title-bar-left">
+                    <span class="title-bar-title"><h3>Anya Keller</h3></span>
+                </div>
+                <div class="title-bar-right">
+                    <ul class="menu align-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="notSoBriefIntro.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -127,23 +127,26 @@
                 </div>
                 <div class="grid-x grid-padding-x">
                     <div class="cell medium-8 medium-cell-block-y">
-                        <h4>
+                        <div class="text-center" style="display: inline-block">
                             <a href="https://github.com/anyakeller"
-                                >Click me for Github Page</a
-                            >
-                        </h4>
-                        <h4>
-                            <a
-                                href="https://drive.google.com/file/d/1QkPwLrA6JA2o7lg1nMG3zc-n75QC8BDc/view?usp=sharing"
-                                >Click me for Resume</a
-                            >
-                        </h4>
-                        <h4>
+                                ><i class="fab fa-github fa-5x"></i
+                            ></a>
+                            <h4>Github</h4>
+                        </div>
+                        <div class="text-center" style="display: inline-block">
                             <a
                                 href="https://www.linkedin.com/in/anya-keller-7914b297/"
-                                >Click me for Linkedin Page</a
-                            >
-                        </h4>
+                                ><i class="fab fa-linkedin-in fa-5x"></i
+                            ></a>
+                            <h4>Linkedin</h4>
+                        </div>
+                        <div class="text-center" style="display: inline-block">
+                            <a
+                                href="https://drive.google.com/file/d/1QkPwLrA6JA2o7lg1nMG3zc-n75QC8BDc/view?usp=sharing"
+                                ><i class="far fa-file-pdf fa-5x"></i
+                            ></a>
+                            <h4>Resume</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,11 +155,8 @@
             </div> -->
         </div>
 
-        <div id="scripts">
-            <script src="app.js"></script>
-            <script>
-                //inline script
-            </script>
-        </div>
+        <script src="app.js"></script>
+        <style></style>
+        <script></script>
     </body>
 </html>
