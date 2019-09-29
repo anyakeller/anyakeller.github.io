@@ -30,6 +30,7 @@
     width: 100%;
 }
 /* Main body */
-.grid-container {
-    margin: 5em 4em;
+
+#main-content {
+    margin-top: 7em;
 }
